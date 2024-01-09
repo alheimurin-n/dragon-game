@@ -1,0 +1,76 @@
+body {
+    background-color: #030303;
+    justify-content: center;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #text {
+    background-color: #dddae3;
+    color: #08020e;
+    padding: 10px;
+  }
+
+  .gamename{
+    color: #ffffff;
+    position: absolute;
+    top: 220px;
+    left: 330px;
+  }
+  #game {
+    width: 700px;
+    height: auto;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    z-index: 3;
+    left: 50%; /* Расположение по центру горизонтальной оси */
+    top: 360px;  /* Расположение по центру вертикальной оси */
+    transform: translate(-50%, -50%); /* Смещение на половину размеров элемента */
+    overflow: hidden;
+    border-radius: 10px;
+    
+  }
+  .dragon {
+    width: 600px;
+    height: 550px;
+    position: absolute; /* Добавлено для использования position: absolute внутри .dragon */
+    justify-content: center;
+    z-index: 2;
+    left: 61%; /* Расположение по центру горизонтальной оси */
+    top: 390px;  /* Расположение по центру вертикальной оси */
+    transform: translate(-50%, -50%); /* Смещение на половину размеров элемента */
+  }
+  
+  #controls,
+  #stats {
+    padding: 5px;
+    color: #0a0a23;
+  }
+  
+  #monsterStats {
+    display: none;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
+  }
+  
+  .stat {
+    padding-right: 10px;
+  }
+  
+  button {
+    cursor: pointer;
+    color: #d9d9e5;
+    background-color: #4B694B;
+    border: 1px solid #0d3b0d;
+    border-radius: 2px;
+    font-size: 16px; /* Задайте желаемый размер шрифта */
+    padding: 8px 16px; /* Задайте желаемый внутренний отступ (padding) для кнопки */
+  }
